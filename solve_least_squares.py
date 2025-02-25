@@ -2,14 +2,14 @@ from sympy import symbols, Matrix
 
 # Определение матрицы коэффициентов
 coefficients_matrix = Matrix([
-    [1, 1, 1, 1],
-    [5, -3, 2, -8],
-    [3, 5, 1, 4],
-    [4, 2, 3, 1]
+    [1, 2, -1, 1],
+    [2, 5, 1, 7],
+    [-3, -10, 0, 6],
+    [4, 10, 2, 15],
 ])
 
 # Определение матрицы значений
-constants_matrix = Matrix([0, 1, 0, 3])
+constants_matrix = Matrix([-6, -4, -5, -7])
 
 # Решение системы с помощью метода наименьших квадратов
 least_squares_solution = coefficients_matrix.solve_least_squares(constants_matrix)
